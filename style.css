@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: white;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(asset/header-image.png);
+  background-size: cover;
+  background-position: center;
+  padding: 10px 100px;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 75px;
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+nav button {
+  border: 0;
+  outline: 0;
+  background-color: #db0001;
+  color: #fff;
+  padding: 7px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 7px 10px;
+}
+.lang-btn img {
+  width: 10px;
+  margin-left: 10px;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 600px;
+  max-width: 650px;
+}
+
+.content h3 {
+  font-weight: 400px;
+  margin-bottom: 20px;
+}
+
+.email-signup {
+  /* background: #fff; */
+
+  background: transparent;
+
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.email-signup input {
+  border: 1px solid rgb(129, 129, 129);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  /* border: 0; */
+  /* outline: 0; */
+  height: 48px;
+  flex: 0.8;
+  font-size: 1rem;
+  /* font-weight: 400; */
+  margin-left: 20px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.email-signup input::placeholder {
+  padding-left: 15px;
+}
+
+.email-signup button {
+  border: 0;
+  outline: 0;
+  background: #db0001;
+  color: #fff;
+  flex: 0.4;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 15px 30px;
+}
+
+/* Features Pages */
+
+.features {
+  padding: 50px 12%;
+  font-size: 22px;
+  position: relative;
+}
+
+.features .row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.row .text-col {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+
+.row .img-col {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+
+.img-col img {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+.text-col h2 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* FQA */
+
+.fqa {
+  padding: 10px 12%;
+  font-size: 18px;
+  text-align: center;
+}
+
+.fqa h2 {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.list {
+  margin: 60px auto;
+  width: 100%;
+  max-width: 750px;
+}
+
+.list li {
+  list-style: none;
+  padding: 5px;
+  width: 100%;
+}
+
+.list li label {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 20px;
+  background: #303030be;
+  cursor: pointer;
+  position: relative;
+}
+
+.list li label:hover {
+  background: #303030;
+}
+
+label::after {
+  content: "+";
+  font-size: 34px;
+  position: absolute;
+  right: 24px;
+  transition: 0.5s;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.list .ans {
+  background: #303030;
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease;
+  /* transition: max-height 0.5s ,padding 0.5s; */
+}
+
+.list input[type="radio"]:checked + label + .ans {
+  padding: 30px 20px;
+  max-height: 600px;
+  margin-top: 3px;
+}
+
+.list input[type="radio"]:checked + label::after {
+  transform: rotate(135deg);
+}
+
+.fqa .email-signup {
+  margin: 20px auto 60px;
+  max-width: 600px;
+}
+
+.fqa small {
+  font-size: 13px;
+}
+
+/* Footer */
+
+.line {
+  width: 100%;
+  height: 0.5rem;
+  bottom: -0.5rem;
+  background-color: rgb(35, 35, 35);
+}
+
+.footer .row .col a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer {
+  padding: 50px 15% 10px;
+  color: #777;
+}
+
+.footer h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.footer .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer .col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.footer .copyright {
+  font-size: 14px;
+  margin: 20px 0 10px 0;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) and (max-width: 700px) {
+  nav {
+    padding: 0;
+  }
+  nav button {
+    padding: 5px 10px;
+  }
+  nav .lang-btn {
+    padding: 5px 10px;
+  }
+  .logo {
+    width: 100px;
+  }
+
+  .header {
+    padding: 40px 35px 0;
+  }
+
+  .content h1 {
+    font-size: 40px;
+    line-height: 55px;
+    margin-bottom: 10px;
+  }
+
+  .email-signup input {
+    width: 150px;
+  }
+
+  .email-signup button {
+    padding: 17px 10px;
+    font-size: 12px;
+    width: 90px;
+  }
+  .features {
+    text-align: center;
+    font-size: 14px;
+  }
+  .features .row {
+    display: block;
+  }
+
+  .text-col h2 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .fqa h2 {
+    font-size: 35px;
+  }
+
+  .list li label {
+    font-size: 16px;
+  }
+
+  .footer .row{
+      flex-wrap: wrap;
+      gap:20px;
+  }
+  .footer .row .col{
+      width: 45%;
+      gap: 10px;
+  }
+  .footer .row .col a{
+      font-size: 10px;
+  }
+
+}
