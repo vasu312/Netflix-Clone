@@ -11,8 +11,9 @@ This project is a simple clone of the Netflix landing page created with HTML and
 - [Contributing](#contributing)
 - [License](#license)
 
-## Demo
+## Screenshot
 
+<img src="https://vasu3.netlify.app/assets/pro2.jpg" width="70%" alt="img"  />
 
 ## Features
 - Replicates the visual layout of the Netflix landing page.
